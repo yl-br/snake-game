@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <title></title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="vue-app" >
+    <div class="center">
+        <h1 id="headline">Snake Game</h1>
+        <div style="display: flex;">
+            <div style="flex: 0 0 65%;">
+                <game-board :score="score" @on-increase-score="increase_score" @on-game-over="game_over" @on-set-username="set_username"></game-board>
+            </div>
+            <div style="flex: 1;">
+                <scores-list ref="scoresList" :score="score" :all_scores="all_scores"></scores-list>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
