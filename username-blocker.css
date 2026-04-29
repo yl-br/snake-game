@@ -1,0 +1,27 @@
+#input-username{
+    border: none;
+    border-color: transparent;
+    background: transparent;
+    outline: none;
+    font-size: 4em;
+}
+
+
+
+
+div#username-blocker {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+
+    position:absolute;
+    top:30%;
+    left:30%;
+    width:500px;
+    background: aliceblue;
+    opacity:0.8;
+
+    text-align: center;
+
+    z-index:100;
+}
